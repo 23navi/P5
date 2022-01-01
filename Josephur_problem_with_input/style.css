@@ -1,0 +1,32 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  color:red;
+}
+canvas {
+  display: block;
+}
+
+
+input[type=text], select {
+  width: 30%;
+  padding: 4px 4px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+div {
+  border-radius: 2px;
+  background-color: #ffffff;
+  padding: 5px;
+}
