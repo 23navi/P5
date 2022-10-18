@@ -225,8 +225,7 @@
   }
   body.active #frame .frame-container #penlink {
 
-
-
+  
     transform: rotate(0deg);
     transition-delay: 0.3s, 2s;
   }
@@ -532,35 +531,37 @@
   }
   body #frame .frame-container #penlink {
     position: absolute;
-    bottom: -10px;
+    bottom: -25px;
     text-decoration: none;
     color: #fe4e01;
     font-weight: 900;
-    transition: color 0.2s ease-in-out, transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-delay: 0.2s;
-    letter-spacing: -2px;
+    /* transition: color 0.2s ease-in-out, transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+    /* transition-delay: 0.2s; */
+    letter-spacing: 2px;
     padding: 10px 15px;
     z-index: 9;
     transform-origin: 50% 12.5vh;
     transform: rotate(-180deg);
     position: absolute;
   }
+
   body #frame .frame-container #penlink:after {
     z-index: -5;
   }
   body #frame .frame-container #penlink:hover {
-    color: #eeece5;
+    /* color: #eeece5; */
   }
   body #frame .frame-container #penlink strong {
     position: relative;
     z-index: 9;
   }
+
   body #frame .frame-container #penlink span {
     display: inline-block;
-    -webkit-animation: back-n-forth 0.5s ease-in-out infinite alternate;
+    /* -webkit-animation: back-n-forth 0.5s ease-in-out infinite alternate;
             animation: back-n-forth 0.5s ease-in-out infinite alternate;
     -webkit-animation-play-state: paused;
-            animation-play-state: paused;
+            animation-play-state: paused; */
   }
   @-webkit-keyframes back-n-forth {
     to {
@@ -572,7 +573,7 @@
       transform: translateX(-2.5px);
     }
   }
-  body #frame .frame-container #penlink:after {
+  /* body #frame .frame-container #penlink:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -611,7 +612,9 @@
     background-position: 50% 100%, 0% 100%, 100% 100%, 100% 0%, 0% 0%;
     transform: scaleX(1) rotate(0deg);
     transition-delay: 0s, 0.2s, 0.4s;
-  }
+  } */
+
+
   body #frame .frame-container iframe {
     position: absolute;
     top: 0;
@@ -629,7 +632,9 @@
     transition-delay: 0.75s, 0.75s, 1.25s;
     opacity: 0;
     box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
-  }
+  } 
+
+
   body:hover #cursor {
     opacity: 1;
   }
