@@ -548,9 +548,7 @@
   body #frame .frame-container #penlink:after {
     z-index: -5;
   }
-  body #frame .frame-container #penlink:hover {
-    /* color: #eeece5; */
-  }
+ 
   body #frame .frame-container #penlink strong {
     position: relative;
     z-index: 9;
@@ -573,47 +571,7 @@
       transform: translateX(-2.5px);
     }
   }
-  /* body #frame .frame-container #penlink:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: linear-gradient(to bottom, #fe4e01 50%, #a58725 50%) 50% 100%/100% 200% no-repeat;
-    left: 0;
-    top: 0;
-    transform: scaleY(0);
-    transform-origin: bottom;
-    transition: transform 0.2s ease-in-out, background-position 0.2s ease-in-out;
-    transition-delay: 0.5s, 0.6s;
-  }
-  body #frame .frame-container #penlink:before {
-    content: "";
-    position: absolute;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    top: calc(2px/ -1);
-    left: calc(2px/ -1);
-    background: linear-gradient(to right, #08350e 0%, #08350e 100%), linear-gradient(to top, #08350e 50%, transparent 50%), linear-gradient(to top, #08350e 50%, transparent 50%), linear-gradient(to right, #08350e 0%, #08350e 100%), linear-gradient(to left, #08350e 0%, #08350e 100%);
-    background-size: 100% 2px, 2px 200%, 2px 200%, 0% 2px, 0% 2px;
-    background-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;
-    background-repeat: no-repeat, no-repeat;
-    transition: transform 0.2s ease-in-out, background-position 0.2s ease-in-out, background-size 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    transform: scaleX(0) rotate(0deg);
-    transition-delay: 0.4s, 0.2s, 0s, 0.6s;
-  }
-  body #frame .frame-container #penlink:hover:after {
-    transform: scaleY(1);
-    transform-origin: top;
-    background-position: 50% 0%;
-  }
-  body #frame .frame-container #penlink:hover:before {
-    background-size: 200% 2px, 2px 400%, 2px 400%, 55% 2px, 55% 2px;
-    background-position: 50% 100%, 0% 100%, 100% 100%, 100% 0%, 0% 0%;
-    transform: scaleX(1) rotate(0deg);
-    transition-delay: 0s, 0.2s, 0.4s;
-  } */
-
+  
 
   body #frame .frame-container iframe {
     position: absolute;
@@ -826,7 +784,7 @@
             backface-visibility: hidden;
     opacity: 0;
   }
-  body #wrap .panel:nth-of-type(even) .thumb:after {
+  body #wrap .panel:nth-of-type(odd) .thumb:after {
     transform: scaleX(-1);
     left: 50%;
   }
@@ -836,13 +794,13 @@
   body #wrap .panel:last-of-type .thumb:after {
     display: none;
   }
-  body #wrap .panel:last-of-type:nth-of-type(even):before {
+  body #wrap .panel:last-of-type:nth-of-type(odd):before {
     right: -5%;
   }
   body #wrap .panel:nth-of-type(1):before {
     content: "1";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -850,7 +808,7 @@
   body #wrap .panel:nth-of-type(2):before {
     content: "2";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -858,7 +816,7 @@
   body #wrap .panel:nth-of-type(3):before {
     content: "3";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -866,7 +824,7 @@
   body #wrap .panel:nth-of-type(4):before {
     content: "4";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -874,7 +832,7 @@
   body #wrap .panel:nth-of-type(5):before {
     content: "5";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -882,7 +840,7 @@
   body #wrap .panel:nth-of-type(6):before {
     content: "6";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -890,7 +848,7 @@
   body #wrap .panel:nth-of-type(7):before {
     content: "7";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -898,7 +856,7 @@
   body #wrap .panel:nth-of-type(8):before {
     content: "8";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -906,7 +864,7 @@
   body #wrap .panel:nth-of-type(9):before {
     content: "9";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -914,7 +872,7 @@
   body #wrap .panel:nth-of-type(10):before {
     content: "10";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -922,7 +880,7 @@
   body #wrap .panel:nth-of-type(11):before {
     content: "11";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -930,7 +888,7 @@
   body #wrap .panel:nth-of-type(12):before {
     content: "12";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -938,7 +896,7 @@
   body #wrap .panel:nth-of-type(13):before {
     content: "13";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -946,7 +904,7 @@
   body #wrap .panel:nth-of-type(14):before {
     content: "14";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -954,7 +912,7 @@
   body #wrap .panel:nth-of-type(15):before {
     content: "15";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -962,7 +920,7 @@
   body #wrap .panel:nth-of-type(16):before {
     content: "16";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -970,7 +928,7 @@
   body #wrap .panel:nth-of-type(17):before {
     content: "17";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -978,7 +936,7 @@
   body #wrap .panel:nth-of-type(18):before {
     content: "18";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -986,7 +944,7 @@
   body #wrap .panel:nth-of-type(19):before {
     content: "19";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -994,7 +952,7 @@
   body #wrap .panel:nth-of-type(20):before {
     content: "20";
   }
-  body #wrap .panel:nth-of-type(even):before {
+  body #wrap .panel:nth-of-type(odd):before {
     left: auto;
     right: 0;
     justify-content: flex-end;
@@ -1117,49 +1075,49 @@
       color: transparent;
     }
   }
-  body #wrap .panel:nth-of-type(even) .thumb:before {
+  body #wrap .panel:nth-of-type(odd) .thumb:before {
     left: -5%;
     top: -5%;
   }
-  body #wrap .panel:nth-of-type(even) .thumb:hover:before {
+  body #wrap .panel:nth-of-type(odd) .thumb:hover:before {
     transform: translate(5%, 5%);
   }
-  body #wrap .panel:nth-of-type(even) h2 {
+  body #wrap .panel:nth-of-type(odd) h2 {
     text-align: right;
     grid-area: 3/3/4/6;
   }
   @media (max-width: 768px) {
-    body #wrap .panel:nth-of-type(even) h2 {
+    body #wrap .panel:nth-of-type(odd) h2 {
       grid-area: 2/1/5/6;
     }
   }
   @media (min-width: 1000px) {
-    body #wrap .panel:nth-of-type(even) h2 {
+    body #wrap .panel:nth-of-type(odd) h2 {
       grid-area: 3/2/4/6;
       -webkit-clip-path: none;
               clip-path: none;
     }
-    body #wrap .panel:nth-of-type(even) h2:nth-of-type(2) {
+    body #wrap .panel:nth-of-type(odd) h2:nth-of-type(2) {
       z-index: 4;
       -webkit-clip-path: polygon(-5% -5%, 385px -5%, 385px 110%, -5% 110%);
               clip-path: polygon(-5% -5%, 385px -5%, 385px 110%, -5% 110%);
     }
-    body #wrap .panel:nth-of-type(even) h2:nth-of-type(2) span.word {
+    body #wrap .panel:nth-of-type(odd) h2:nth-of-type(2) span.word {
       color: transparent;
     }
-    body #wrap .panel:nth-of-type(even) h2:nth-of-type(2) span.word:before, body #wrap .panel:nth-of-type(even) h2:nth-of-type(2) span.word:after {
+    body #wrap .panel:nth-of-type(odd) h2:nth-of-type(2) span.word:before, body #wrap .panel:nth-of-type(odd) h2:nth-of-type(2) span.word:after {
       color: transparent;
     }
   }
-  body #wrap .panel:nth-of-type(even) .thumb {
+  body #wrap .panel:nth-of-type(odd) .thumb {
     grid-area: 2/1/5/4;
   }
   @media (max-width: 768px) {
-    body #wrap .panel:nth-of-type(even) .thumb {
+    body #wrap .panel:nth-of-type(odd) .thumb {
       grid-area: 2/1/5/6;
     }
   }
-  body #wrap .panel:nth-of-type(even) .thumb p {
+  body #wrap .panel:nth-of-type(odd) .thumb p {
     top: -70px;
   }
   body #wrap .panel .thumb {
