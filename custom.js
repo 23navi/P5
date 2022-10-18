@@ -7,16 +7,10 @@ let penLink = document.getElementById("penlink");
 let links = document.getElementsByTagName("a");
 
 let frames = [
-  "https://editor.p5js.org/23navi/full/XagbtVxQo",
-  "https://editor.p5js.org/23navi/full/hG1OT6NsQ",
-  "https://editor.p5js.org/23navi/full/Y55u_0c0W",
-  "https://cdpn.io/cobra_winfrey/debug/YzXOBEN",
-  "https://codepen.io/cobra_winfrey/debug/qBZWVmO",
-  "https://codepen.io/cobra_winfrey/debug/eYOXOdB",
-  "https://codepen.io/cobra_winfrey/debug/OJXJeod",
-  "https://codepen.io/cobra_winfrey/debug/PoqVQRq",
-  "https://cdpn.io/cobra_winfrey/debug/qgEGMZ",
-  "https://codepen.io/cobra_winfrey/debug/RwWYGxj"
+  {src:"https://editor.p5js.org/23navi/full/XagbtVxQo",desc:"Text data"},
+  {src:"https://editor.p5js.org/23navi/full/hG1OT6NsQ",desc:"textt",},
+  {src:"https://editor.p5js.org/23navi/full/Y55u_0c0W",desc:"textt"},
+ 
 ];
 
 // Load iFrames on demand & remove after modal is closed to reduce weight & smooth out transitions
@@ -38,8 +32,12 @@ for (let i = 0; i < cards.length; i++) {
     "click",
     function (i) {
       body.classList.add("active");
-      iframe.setAttribute("src", frames[i]);
-      let penDebug = frames[i];
+      iframe.setAttribute("src", frames[i].src);
+      // infoData
+      document.querySelector("#infoData").innerHTML=frames[i].desc;
+      // $(".text").html("Your content here...");
+
+      let penDebug = frames[i].src;
       let penFull = penDebug.replace("debug", "pen");
       penLink.setAttribute("href", penFull);
     }.bind(null, i)
