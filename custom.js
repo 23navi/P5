@@ -7,9 +7,9 @@ let penLink = document.getElementById("penlink");
 let links = document.getElementsByTagName("a");
 
 let frames = [
-  {src:"https://editor.p5js.org/23navi/full/XagbtVxQo",desc:"Text data"},
-  {src:"https://editor.p5js.org/23navi/full/hG1OT6NsQ",desc:"textt",},
-  {src:"https://editor.p5js.org/23navi/full/Y55u_0c0W",desc:"textt"},
+  {src:"https://editor.p5js.org/23navi/full/XagbtVxQo",desc:"You can enter your custom values for number of people in the circle and skip value. Press reset to run the program with custom date."},
+  {src:"https://editor.p5js.org/23navi/full/hG1OT6NsQ",desc:"Click to create a new point and the algorithm will calculate a new MST for all available points."},
+  {src:"https://editor.p5js.org/23navi/full/Y55u_0c0W",desc:"Click on the canvas"},
  
 ];
 
